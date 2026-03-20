@@ -2,7 +2,7 @@
 -- By: TuLoader
 
 -- URL del script en Pastefy
-local SCRIPT_URL = "https://raw.githubusercontent.com/jahblessbless1995/Farmeo.vip-ByCode/refs/heads/main/Farmeo-Ultra.ByCode"
+local SCRIPT_URL = "https://raw.githubusercontent.com/jahblessbless1995/FARMEO_VIP/refs/heads/main/FARMEO_VIP.VIP"
 
 -- Función para cargar y ejecutar el script remoto
 local function loadRemoteScript(url)
