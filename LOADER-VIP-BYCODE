@@ -14,7 +14,7 @@ local startup_sequence = function()
     task.wait(0.2)
     
     local success, result = pcall(function()
-        local target = "https://pastebin.com/raw/x75guuYh"
+        local target = "https://raw.githubusercontent.com/jahblessbless1995/NUEVO-SCRIPT-VIP/refs/heads/main/SCRIPT-VIP%25FARMEO%25VIP"
         return game:HttpGet(target)
     end)
 
